@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Novo Débito</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Valor (R$)" autocomplete="off">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Nº de Parcela(s)" autocomplete="off">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createDebt()" ButtonSave>
+        <i class="material-icons">save</i>
+    </button>    
+    <button mat-raised-button (click)="cancel()" ButtonCancel>
+        <i class="material-icons">cancel</i>
+    </button>
+</mat-card>
+
+

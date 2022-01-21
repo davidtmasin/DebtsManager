@@ -1,0 +1,24 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" 
+                 opened fixedInViewport=true
+                 fixedTopGap="70">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    dashboard
+                </i>
+                Dashboard
+            </a>
+            <a mat-list-item routerLink="/debts">
+                <i class="material-icons">
+                    monetization_on
+                </i>
+                Débitos
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <!-- Este elemento sempre será substituído de acordo com a navegação -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

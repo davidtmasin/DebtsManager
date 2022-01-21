@@ -1,0 +1,38 @@
+{
+  "debts": [
+    {
+      "id": 1,
+      "name": "Energia",
+      "price": 235,
+      "hasParc": true,
+      "numberOfParc": 3
+    },
+    {
+      "id": 2,
+      "name": "Cartão de Crédito Nubank",
+      "price": 900,
+      "hasParc": true,
+      "numberOfParc": 3
+    },
+    {
+      "id": 3,
+      "name": "Licenciamento Veicular 2022",
+      "price": 160,
+      "hasParc": true,
+      "numberOfParc": 3
+    },
+    {
+      "id": 4,
+      "name": "Parcelamento Celular e Tela",
+      "price": 130,
+      "hasParc": true,
+      "numberOfParc": 3
+    },
+    {
+      "name": "Débito de teste",
+      "price": 125.98,
+      "hasParc": false,
+      "id": 5
+    }
+  ]
+}
