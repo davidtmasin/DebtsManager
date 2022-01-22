@@ -1,30 +1,50 @@
-<mat-card>
+<mat-card class="containerMatCard">
   <mat-card-title>Novo Débito</mat-card-title>
   <form>
     <mat-form-field>
-      <input matInput placeholder="Descrição do Débito" autocomplete="off" />
+      <input
+        matInput
+        placeholder="Descrição do Débito"
+        autocomplete="off"
+        [(ngModel)]="debt.name"
+        name="name"
+      />
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Valor do Débito" autocomplete="off" />
+      <input
+        matInput
+        placeholder="Valor do Débito"
+        autocomplete="off"
+        [(ngModel)]="debt.price"
+        name="price"
+      />
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Nº de Parcela(s)" autocomplete="off" />
+      <input
+        matInput
+        placeholder="Nº de Parcela(s)"
+        autocomplete="off"
+        [(ngModel)]="debt.numberOfParc"
+        name="numberOfParc"
+      />
     </mat-form-field>
   </form>
-  <button
-    mat-raised-button
-    (click)="createDebt()"
-    ButtonSave
-    title="Salvar débito"
-  >
-    <i class="material-icons">save</i>
-  </button>
-  <button
-    mat-raised-button
-    (click)="cancel()"
-    ButtonCancel
-    title="Cancelar operação"
-  >
-    <i class="material-icons">cancel</i>
-  </button>
+  <div class="containerButton">
+    <button
+      mat-raised-button
+      (click)="createDebt()"
+      ButtonSave
+      title="Salvar débito"
+    >
+      <i class="material-icons">save</i>
+    </button>
+    <button
+      mat-raised-button
+      (click)="cancel()"
+      ButtonCancel
+      title="Cancelar operação"
+    >
+      <i class="material-icons">cancel</i>
+    </button>
+  </div>
 </mat-card>

@@ -1,22 +1,44 @@
-<mat-card>
+<mat-card class=containerMatCard>
   <mat-card-title>Novo Crédito</mat-card-title>
   <form>
     <mat-form-field>
-      <input matInput placeholder="Descrição do Crédito" autocomplete="off" />
+      <input
+        matInput
+        placeholder="Descrição do Crédito"
+        [(ngModel)]="credit.name"
+        name="name"
+        autocomplete="off"
+        required
+      />
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Valor do Crédito" autocomplete="off" />
+      <input
+        matInput
+        type="number"
+        placeholder="Valor do Crédito"
+        [(ngModel)]="credit.price"
+        name="price"
+        autocomplete="off"
+        required
+      />
     </mat-form-field>
   </form>
-  <button mat-raised-button ButtonSave title="Salvar crédito">
-    <i class="material-icons">save</i>
-  </button>
-  <button
-    mat-raised-button
-    (click)="cancel()"
-    ButtonCancel
-    title="Cancelar operação"
-  >
-    <i class="material-icons">cancel</i>
-  </button>
+  <div class="containerButton">
+    <button
+      mat-raised-button
+      (click)="createCredit()"
+      ButtonSave
+      title="Salvar crédito"
+    >
+      <i class="material-icons">save</i>
+    </button>
+    <button
+      mat-raised-button
+      (click)="cancel()"
+      ButtonCancel
+      title="Cancelar operação"
+    >
+      <i class="material-icons">cancel</i>
+    </button>
+  </div>
 </mat-card>

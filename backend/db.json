@@ -33,6 +33,30 @@
       "price": 125.98,
       "hasParc": false,
       "id": 5
+    },
+    {
+      "name": "Aluguel",
+      "price": "520",
+      "numberOfParc": "1",
+      "id": 6
+    },
+    {
+      "name": "Prostituas",
+      "price": "500",
+      "numberOfParc": 0,
+      "id": 7
+    },
+    {
+      "name": "Drogas",
+      "price": "500",
+      "numberOfParc": "2",
+      "id": 8
+    },
+    {
+      "name": "Moto",
+      "price": "399.98",
+      "numberOfParc": "5",
+      "id": 9
     }
   ],
   "credits": [
@@ -50,6 +74,31 @@
       "name": "Venda",
       "price": 50,
       "id": 3
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 4
+    },
+    {
+      "name": "Teste",
+      "price": "200",
+      "id": 5
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 6
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 7
+    },
+    {
+      "name": "",
+      "price": 232323,
+      "id": 8
     }
   ]
 }
