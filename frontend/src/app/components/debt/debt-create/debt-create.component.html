@@ -1,24 +1,30 @@
 <mat-card>
-    <mat-card-title>Novo Débito</mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput placeholder="Descrição" autocomplete="off">
-        </mat-form-field>
-
-        <mat-form-field>
-            <input matInput placeholder="Valor (R$)" autocomplete="off">
-        </mat-form-field>
-        
-        <mat-form-field>
-            <input matInput placeholder="Nº de Parcela(s)" autocomplete="off">
-        </mat-form-field>
-    </form>
-    <button mat-raised-button (click)="createDebt()" ButtonSave>
-        <i class="material-icons">save</i>
-    </button>    
-    <button mat-raised-button (click)="cancel()" ButtonCancel>
-        <i class="material-icons">cancel</i>
-    </button>
+  <mat-card-title>Novo Débito</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Descrição do Débito" autocomplete="off" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Valor do Débito" autocomplete="off" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nº de Parcela(s)" autocomplete="off" />
+    </mat-form-field>
+  </form>
+  <button
+    mat-raised-button
+    (click)="createDebt()"
+    ButtonSave
+    title="Salvar débito"
+  >
+    <i class="material-icons">save</i>
+  </button>
+  <button
+    mat-raised-button
+    (click)="cancel()"
+    ButtonCancel
+    title="Cancelar operação"
+  >
+    <i class="material-icons">cancel</i>
+  </button>
 </mat-card>
-
-

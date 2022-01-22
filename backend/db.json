@@ -34,5 +34,22 @@
       "hasParc": false,
       "id": 5
     }
+  ],
+  "credits": [
+    {
+      "id": 1,
+      "name": "Salário",
+      "price": 3500
+    },
+    {
+      "id": 2,
+      "name": "FGTS",
+      "price": 1150
+    },
+    {
+      "name": "Venda",
+      "price": 50,
+      "id": 3
+    }
   ]
 }
