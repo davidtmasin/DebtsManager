@@ -24,4 +24,8 @@ export class CreditService {
   create(credit: Credit): Observable<Credit> {
     return this.http.post<Credit>(this.baseUrl, credit)
   }
+
+  read(): Observable<Credit[]> {
+    return this.http.get<Credit[]>(this.baseUrl)
+  }
 }

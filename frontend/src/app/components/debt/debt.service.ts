@@ -28,5 +28,8 @@ export class DebtService {
     return this.http.post<Debt>(this.baseUrl, debt);
   }
 
+  read(): Observable<Debt[]> {
+    return this.http.get<Debt[]>(this.baseUrl);
+  }
 
 }

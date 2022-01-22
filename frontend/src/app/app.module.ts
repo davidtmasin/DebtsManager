@@ -12,6 +12,8 @@ import { DebtsCrudComponent } from './views/debts-crud/debts-crud.component'
 import { CreditsCrudComponent } from './views/credits-crud/credits-crud.component'
 import { DebtCreateComponent } from './components/debt/debt-create/debt-create.component'
 import { CreditCreateComponent } from './components/credit/credit-create/credit-create.component'
+import { DebtReadComponent } from './components/debt/debt-read/debt-read.component'
+import { CreditReadComponent } from './components/credit/credit-read/credit-read.component'
 import { RedDirective } from './directives/red.directive'
 import { ButtonSaveDirective } from './directives/button-save.directive'
 import { GeneralButtonDirective } from './directives/general-button.directive'
@@ -55,7 +57,9 @@ import { MatInputModule } from '@angular/material/input'
     ButtonSaveDirective,
     GeneralButtonDirective,
     CreditsCrudComponent,
-    CreditCreateComponent
+    CreditCreateComponent,
+    DebtReadComponent,
+    CreditReadComponent
   ],
   imports: [
     BrowserModule,
