@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-title>Novo Crédito</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Descrição do Crédito" autocomplete="off" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Valor do Crédito" autocomplete="off" />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button ButtonSave title="Salvar crédito">
+    <i class="material-icons">save</i>
+  </button>
+  <button
+    mat-raised-button
+    (click)="cancel()"
+    ButtonCancel
+    title="Cancelar operação"
+  >
+    <i class="material-icons">cancel</i>
+  </button>
+</mat-card>
