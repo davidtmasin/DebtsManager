@@ -1,1 +1,5 @@
-<p>credit-read works!</p>
+<ul>
+  <li *ngFor="let credit of credits">
+    {{ credit.id }} => {{ credit.name }} => {{ credit.price }}
+  </li>
+</ul>

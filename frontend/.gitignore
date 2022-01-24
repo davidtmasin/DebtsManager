@@ -1,15 +1,27 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+### Angular ###
+## Angular ##
+.angular/
+.angular/cache/
+.angular/*
+
+# compiled output
+dist/
+tmp/
+out-tsc/
+/bazel-out/
+app/**/*.js
+app/**/*.js.map
+
 
 # Node
-/node_modules
 npm-debug.log
 yarn-error.log
+
+# dependencies
+node_modules/
+bower_components/
 
 # IDEs and editors
 .idea/
@@ -21,6 +33,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -29,14 +42,23 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
 .sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
 testem.log
-/typings
+typings/
+.angular/
+
+# e2e
+e2e/*.js
+e2e/*.map
 
 # System files
 .DS_Store
 Thumbs.db
+
+
+#Others
+ngrok.exe

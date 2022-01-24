@@ -1,22 +1,28 @@
-.header{
-    display: flex;
-    align-items: center;
+.header {
+  /* display: flex; */
+  flex: 1 1 auto;
+  align-items: center;
+
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 }
 
 .header a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.header .logo{
-    max-height: 44px;
+.header .logo {
+  max-height: 44px;
 }
 
-.header .title-group{
-    padding-left: 25px;
+.header .title-group {
+  padding-left: 25px;
 }
 
-.header .title-group i{
-    padding-right: 10px;
+.header .title-group i {
+  padding-right: 10px;
 }

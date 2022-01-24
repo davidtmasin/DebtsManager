@@ -13,6 +13,7 @@ import { CreditsCrudComponent } from './views/credits-crud/credits-crud.componen
 import { DebtCreateComponent } from './components/debt/debt-create/debt-create.component'
 import { CreditCreateComponent } from './components/credit/credit-create/credit-create.component'
 import { DebtReadComponent } from './components/debt/debt-read/debt-read.component'
+import { DebtRead2Component } from './components/debt/debt-read2/debt-read2.component'
 import { CreditReadComponent } from './components/credit/credit-read/credit-read.component'
 import { RedDirective } from './directives/red.directive'
 import { ButtonSaveDirective } from './directives/button-save.directive'
@@ -41,7 +42,12 @@ import { HttpClientModule } from '@angular/common/http'
 //Módulos para trabalhar com formulários
 import { FormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
-import { MatInputModule } from '@angular/material/input'
+import { MatInputModule } from '@angular/material/input';
+
+//Schematics Table
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -59,7 +65,8 @@ import { MatInputModule } from '@angular/material/input'
     CreditsCrudComponent,
     CreditCreateComponent,
     DebtReadComponent,
-    CreditReadComponent
+    CreditReadComponent,
+    DebtRead2Component
   ],
   imports: [
     BrowserModule,
@@ -74,7 +81,10 @@ import { MatInputModule } from '@angular/material/input'
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

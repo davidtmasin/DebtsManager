@@ -1,0 +1,7 @@
+# Node
+npm-debug.log
+yarn-error.log
+
+# dependencies
+node_modules/
+bower_components/

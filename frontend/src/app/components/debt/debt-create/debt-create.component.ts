@@ -10,6 +10,7 @@ import { DebtService } from '../debt.service'
 })
 export class DebtCreateComponent implements OnInit {
   debt: Debt = {
+    id: 0,
     name: '',
     price: 0,
     numberOfParc: 0
