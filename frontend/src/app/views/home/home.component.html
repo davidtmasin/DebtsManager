@@ -1,29 +1,31 @@
 <mat-card class="containerDashboard">
   
-  <mat-card-title class="title"> Visal Geral </mat-card-title>
+  <mat-card-title class="title"> Visão Geral </mat-card-title>
+    <div class="containerMatCard">
 
-  <mat-card class="home debts mat-elevation-z6">
-    <mat-card-title class="title"> Seus Débitos </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-      Acompanhe sua carteira de gastos
-    </mat-card-subtitle>
-
-    <mat-card-content class="cardContent">
-      <app-debt-read2></app-debt-read2>
-    </mat-card-content>
-
-  </mat-card>
-
-  <mat-card class="home credits mat-elevation-z6">
-    <mat-card-title class="title"> Seus Créditos </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-      Acompanhe sua carteira de ganhos
-    </mat-card-subtitle>
-
-    <mat-card-content class="cardContent">
-      <app-debt-read2></app-debt-read2>
-    </mat-card-content>
-
-  </mat-card>
+        <mat-card class="home debts mat-elevation-z6">
+          <mat-card-title class="title"> Seus Débitos </mat-card-title>
+          <mat-card-subtitle class="subtitle">
+            Acompanhe sua carteira de gastos
+          </mat-card-subtitle>
+      
+          <mat-card-content class="cardContent">
+            <app-debt-read></app-debt-read>
+          </mat-card-content>
+      
+        </mat-card>
+      
+        <mat-card class="home credits mat-elevation-z6">
+          <mat-card-title class="title"> Seus Créditos </mat-card-title>
+          <mat-card-subtitle class="subtitle">
+            Acompanhe sua carteira de ganhos
+          </mat-card-subtitle>
+      
+          <mat-card-content class="cardContent">
+            <app-credit-read></app-credit-read>
+          </mat-card-content>
+      
+        </mat-card>
+    </div>
 
 </mat-card>

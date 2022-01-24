@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+}
+
+table .thHead{
+    font-weight: 800;
+    background: rgb(168, 2, 2);
+    color: #FFF;
+    text-align: center;
+}
+
+table .tdData{
+    text-align: center;
+    background-color: #fff4f4;
+}

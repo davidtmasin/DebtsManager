@@ -8,14 +8,18 @@ import { DebtService } from '../debt.service'
   styleUrls: ['./debt-read.component.css']
 })
 export class DebtReadComponent implements OnInit {
-  debts!: Debt[] //O uso do ! é para não obrigar a implementação de um valor
+  
+  //O uso do ! é para não obrigar a implementação de um valor
+  debts!: Debt[] 
+
+  // O símbolo : define o tipo e o símbolo = define a atribuição
+  displayedColumns = ['id', 'name', 'price', 'numberOfParc']
 
   constructor(private debtService: DebtService) {}
 
   ngOnInit(): void {
     this.debtService.read().subscribe(debts => {
       this.debts = debts
-      console.log(this.debts)
     })
   }
 }

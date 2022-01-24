@@ -10,13 +10,14 @@ import { CreditService } from '../credit.service';
 export class CreditReadComponent implements OnInit {
 
   credits!: Credit[]
+  
+  displayedColumns = ['id', 'name', 'price']
 
   constructor(private creditService: CreditService) { }
 
   ngOnInit(): void {
     this.creditService.read().subscribe(credits => {
       this.credits = credits
-      console.log(this.credits)
     })
   }
 
